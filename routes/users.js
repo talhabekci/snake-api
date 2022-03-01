@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
                 return -1;
             }
             return 0;
-        });
+        })
         .slice(0,10)
   );
 });
