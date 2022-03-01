@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/score', function(req, res, next) {
     const {score, userName} = req.body;
-    users.push({score, userName});
+    users.push({score: Number(score), userName});
     res.send({success:true});
 });
 
